@@ -1,0 +1,35 @@
+.custom-cursor {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 10px;
+    height: 10px;
+    /* прозрачный черный цвет */
+    position: absolute;
+    pointer-events: none;
+    /* делаем элемент прозрачным для событий мыши */
+    z-index: 9999;
+    /* устанавливаем наибольший z-index для показа поверх остальных элементов */
+    transform: translate(-50%, -50%);
+    /* центрируем элемент относительно его собственных размеров */
+    transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+/* .comet {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    animation: cometAnimation 2s linear;
+  }
+  
+  @keyframes cometAnimation {
+    from {
+      transform: scale(0.5);
+      opacity: 1;
+    }
+    to {
+      transform: scale(3);
+      opacity: 0;
+    }
+  } */
